@@ -148,17 +148,51 @@ h3 { font-size: 20px; letter-spacing: -0.024em; margin-bottom: 12px; }
 .btn.primary:hover { background: var(--accent-hover); }
 .btn.ghost { background: rgba(255,255,255,0.025); color: var(--soft); }
 
-.terminal-card {
+.avatar-card {
   border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.025));
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), 0 28px 100px rgba(0,0,0,0.42);
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.025));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 32px 120px rgba(0,0,0,0.52), 0 0 90px rgba(113,112,255,0.12);
+  overflow: hidden;
+  transform: rotate(1.2deg);
+}
+.avatar-frame {
+  aspect-ratio: 3 / 4;
+  background: #08090a;
   overflow: hidden;
 }
-.terminal-top { display: flex; gap: 8px; padding: 16px; border-bottom: 1px solid var(--line-soft); background: rgba(255,255,255,0.025); }
-.terminal-top span { width: 10px; height: 10px; border-radius: 999px; background: rgba(255,255,255,0.18); }
-.terminal-card pre { margin: 0; padding: 28px; white-space: pre-wrap; }
-.terminal-card code { font-family: 'JetBrains Mono', ui-monospace, monospace; color: var(--soft); font-size: 14px; line-height: 1.8; }
+.avatar-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.avatar-caption {
+  padding: 20px 22px 22px;
+  border-top: 1px solid var(--line-soft);
+  background: rgba(8,9,10,0.78);
+}
+.caption-kicker {
+  display: block;
+  margin-bottom: 8px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.11em;
+  color: var(--accent);
+}
+.avatar-caption strong {
+  display: block;
+  color: var(--text);
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.avatar-caption p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 14px;
+}
 .muted { color: var(--accent); }
 
 .split-section { padding: 76px 0; display: grid; grid-template-columns: 0.8fr 1fr; gap: 52px; border-top: 1px solid var(--line-soft); }
