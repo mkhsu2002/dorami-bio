@@ -1,6 +1,8 @@
 # Dorami Bio
 
-Official bio web for Dorami — MK's sarcastic co-pilot and execution agent.
+Official bio web for Dorami — MK's Hermes stand agent, sarcastic execution operator, and memory-aware AI work system.
+
+This static page presents Dorami's personality, capabilities, visual evolution, and operating protocol without exposing MK's private memory or credentials. Public face, private brain safely elsewhere. Sensible, apparently.
 
 ## Local preview
 
